@@ -1,0 +1,64 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+a {
+  color: #2f889a;
+  text-decoration: none;
+}
+
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+
+
+
+@media only screen and (min-width: 768px) {
+  .main-nav {
+    width: auto;
+    height: auto;
+    background: none;
+    cursor: auto;
+  }
+  .main-nav a {
+    display: inline-block;
+    height: auto;
+    line-height: normal;
+    background: transparent;
+  }
+  .main-nav a.cd-signin {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50em;
+  }
+
+}
+
+
+@media only screen and (min-width: 600px) {
+  .cd-user-modal-container {
+    margin: 4em auto;
+  }
+}
+
+.cd-form {
+  padding: 1.4em;
+}
+
+@media only screen and (min-width: 600px) {
+  .cd-form {
+    padding: 2em;
+  }
+}
+

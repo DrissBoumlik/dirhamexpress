@@ -1,0 +1,60 @@
+// MIXINS DEFINITIONS
+
+
+=padding-side($left, $right)
+    padding-left: $left
+    padding-right: $right
+
+=padding-vSide($top, $bottom)
+    margin-top: $top
+    margin-bottom: $bottom
+
+=margin-side($left, $right)
+    margin-left: $left
+    margin-right: $right
+
+=margin-vSide($top, $bottom)
+    margin-top: $top
+    margin-bottom: $bottom
+
+=bg($bg-color, $color, $padding-side, $bg-alpha : 1)
+    // @if $bg-alpha == 1
+    //     background-color: rgba($bg-color, 1)
+    // @else
+    //     background-color: rgba($bg-color, $bg-alpha)
+    background-color: rgba($bg-color, $bg-alpha)
+    color: $color
+    padding: 0 $padding-side
+
+=animation($name, $duration, $time-fct : ease, $delay : 0s, $count : 1, $direction : none)
+    animation-name: $name
+    animation-duration: $duration
+    animation-timing-function: $time-fct
+    animation-delay: $delay
+    animation-iteration-count: $count
+    animation-fill-mode: $direction
+
+=bouncing($name, $bounce_value, $duration, $_count : 1)
+    +animation($name, $duration, $count : $_count)
+    @keyframes #{$name}
+        0% 
+            top: $bounce_value
+        50%
+            top: -$bounce_value
+        100% 
+            top: $bounce_value
+
+
+=bouncing_reverse($name, $bounce_value, $duration, $_count : 1)
+    +animation($name, $duration, $count : $_count)
+    @keyframes #{$name}
+        0% 
+            top: -$bounce_value
+        50%
+            top: $bounce_value
+        100% 
+            top: -$bounce_value
+
+    
+=text-shadow($value...)
+    text-shadow: $value

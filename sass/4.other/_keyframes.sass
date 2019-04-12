@@ -1,0 +1,82 @@
+//KEYFRAMES DEFINITION
+
+@keyframes spin
+    0%, 100%
+        transform: rotate(0deg)
+    25%
+        transform: rotate(30deg)
+    50%
+        transform: rotate(-30deg)
+    75%
+        transform: rotate(15deg)
+
+@keyframes jump
+    0%, 100%
+        transform: translateY(0)
+    25%
+        transform: translateY(-20px)
+    50%
+        transform: translateY(2px)
+    75%
+        transform: translateY(-5px)
+
+@keyframes magnify
+    0%, 100%
+        transform: scale(1)
+    50%
+        transform: scale(1.1)
+
+@keyframes _pulse
+	0%
+		box-shadow: 0 0 0 rgba(38,44,60,0.5)
+	70%
+		box-shadow: 0 0 0 .75rem rgba(38,44,60,0)
+	100%
+		box-shadow: 0 0 0 rgba(38,44,60,0)
+
+@keyframes _bounce 
+    0% 
+        top: 20px
+    50%
+        top: -20px
+    100% 
+        top: 20px
+
+@keyframes _bounce_reverse
+    0% 
+        top: -20px
+    50%
+        top: 20px
+    100% 
+        top: -20px
+
+@keyframes grow
+    0%
+        transform: scale(0.2)
+    50%
+        transform: scale(1.05)
+    100%
+        transform: scale(1)
+
+
+@keyframes fade-in-out
+    0%, 100%
+        opacity: 1
+    50%
+        opacity: 0
+        
+
+@keyframes _bounce_2
+    0%
+        top: 2px
+    50%
+        top: -2px
+    100%
+        top: 2px
+@keyframes _bounce_reverse_2
+    0%
+        top: -2px
+    50%
+        top: 2px
+    100%
+        top: -2px
